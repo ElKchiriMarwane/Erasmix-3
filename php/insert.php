@@ -8,7 +8,7 @@
  $q=mysqli_query($con,"INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')");
  if($q)
   echo "success";
- else
+}else{
   echo "error";
  }
  ?>

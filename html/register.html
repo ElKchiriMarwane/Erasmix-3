@@ -22,10 +22,11 @@
             },
             success: function(data) {
               if (data == "success") {
-                alert("inserted");
+                // alert("inserted");
+                window.location = "http://localhost/www/erasmix3/index.html"
                 $("#insert").val('Register');
               } else if (data == "error") {
-                alert("error");
+                // alert("error");
               }
             }
           });
@@ -56,8 +57,9 @@
       </div>
       <div class="item">
         <input type="button" id="insert" class="button button-block" value="Sign In" />
+<button><a href="../index.html">Log In</a></button>
       </div>
-      <a href="../index.html">Log In</a>
+
     </div>
   </div>
 </body>

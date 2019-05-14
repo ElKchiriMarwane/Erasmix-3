@@ -21,7 +21,7 @@
             },
             success: function(data) {
               if (data == "success") {
-                alert("connected");
+                window.location = "http://localhost/www/erasmix3/html/timeline.html"
                 $("#insert").val('Log In');
               } else if (data == "error") {
                 alert("error");
@@ -52,8 +52,9 @@
       </div>
       <div class="item">
         <input type="button" id="insert" class="button button-block" value="Log In" />
+  <button><a href="html/register.html">Register</a></button>
       </div>
-      <a href="html/register.html">Register</a>
+
     </div>
   </div>
 </body>
