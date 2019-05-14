@@ -21,7 +21,7 @@ if(mysqli_num_rows($result) > 0){
 	}
 	$_SESSION['username'] = $username;
 	echo 'success';
-	// header("Location: profile.php");
+	header("Location: ../html/timeline.html");
 }else{
 	echo "error";
 }
