@@ -33,8 +33,10 @@ img{
 }
 .returnicon{
   height: 5vh;
+  /* width: 100%; */
   display: flex;
   align-items: center;
+  /* justify-content: center; */
 padding-left: 1em;
 
 

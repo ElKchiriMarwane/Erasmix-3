@@ -1,6 +1,6 @@
 <?php
  header("Access-Control-Allow-Origin: *");
- $servername ="localhost";
+ $servername ="10.3.210.44";
  $username = "root";
  $password = "";
  $database = "loginsystem";

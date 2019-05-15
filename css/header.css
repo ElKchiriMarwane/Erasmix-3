@@ -33,12 +33,19 @@ padding: 5px;
 }
 .createbutton{
   width: 100vw;
-  height: 30px;
-  background-color: red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+.icon{
+margin: 1em;
+  width: 4em;
+}
 .fix{
   position: fixed;
+}
+.bg{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
