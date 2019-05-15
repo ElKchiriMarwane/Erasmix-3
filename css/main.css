@@ -1,82 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&subset=latin-ext');
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Karla'
-}
-body{
-	background-color: rgb(255,255,255);
+@import url("form.css");
+@import url("header.css");
+@import url("userprofile.css");
 
-}
-.main{
-	/* width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0; */
-}
-.list{
-position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.logo{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100px;
-	margin-bottom: 50px;;
-}
-
-
-input[type|="text"]{
-	margin: 20px;
-	border: none;
-	padding: 10px;
-	border-bottom: 1px solid rgba(0,0,0,0.5);
-	width: 230px;
-
-}input[type|="email"]{
-	margin: 20px;
-	border: none;
-	padding: 10px;
-	border-bottom: 1px solid rgba(0,0,0,0.5);
-	width: 230px;
-
-}
-input[type|="password"]{
-	margin: 20px;
-	border: none;
-	padding: 10px;
-	border-bottom: 1px solid rgba(0,0,0,0.5);
-	width: 230px;
-}
-input[type|="button"]{
-	margin-top: 20px;
-	padding: 10px 30px;
-	border: none;
-	background-color: red;
-	color: white;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-button{
-	margin-top: 20px;
-	background-color: transparent;
-	border: none;
-	outline: none;
-	text-decoration: none;
-	padding: 5px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.list a{
-  text-decoration: none;
-  color: red;
-	font-size: 12px;
+*{
+  padding: 0;
+  margin: 0;
 }
