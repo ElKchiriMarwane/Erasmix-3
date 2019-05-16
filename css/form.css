@@ -25,3 +25,7 @@ input, .registerlogin{
   background-color: transparent;
   border-bottom:2px  solid black;
 }
+.icon{
+margin: 1em;
+  width: 4em;
+}
