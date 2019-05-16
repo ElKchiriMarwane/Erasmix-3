@@ -35,6 +35,7 @@ input{
   background-color: transparent;
   border-bottom:1px  solid black;
 }
+<<<<<<< HEAD
 form{
 	display: flex;
 	flex-direction: column;
@@ -42,3 +43,9 @@ form{
 	align-items: center;
 	width: 100vw;
 }
+=======
+.icon{
+margin: 1em;
+  width: 4em;
+}
+>>>>>>> OMG BEST LOGO REGISTER ADDED
