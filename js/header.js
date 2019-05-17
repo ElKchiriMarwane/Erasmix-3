@@ -20,4 +20,5 @@ function ToggleSearchbar(){
                 $('header').removeClass('headerscroll')
             }
     }
+    
 });
