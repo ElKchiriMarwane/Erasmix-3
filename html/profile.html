@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/userprofile.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // var username = localStorage.getItem("username");
+      // var firstname = localStorage.getItem("firstname");
+      // var lastname = localStorage.getItem("lastname");
+      // console.log(firstname);
+      $.ajax({
+        type: "GET",
+        url: "../php/user.php",
+        crossDomain: true,
+        cache: false,
+        success: function(data) {
+          console.log(data);
+          // if (data == "success") {
+          //   alert("connected");
+          //   window.location = "html/timeline.html";
+          //   localStorage.setItem("username", username);
+          // } else if (data == "error") {
+          //   alert("error");
+          // }
+        }
+      });
+      // $('.username').append(firstname + " " + lastname);
+    });
+  </script>
 </head>
+
 <body>
   <div class="returnicon">
-  <a href="timeline.html">  <img src="../icons/returnicon.svg" alt=""></a>
-</div>
+    <a href="timeline.html"> <img src="../icons/returnicon.svg" alt=""></a>
+    <h1 class="username"></h1>
+  </div>
   <div class="userprofile">
 
-  <img  class="profilepicture" src="../icons/defaultusericon.svg" alt="">
+    <img class="profilepicture" src="../icons/defaultusericon.svg" alt="">
 
-      <a href="">My Projects</a>
-      <a href="">Change Password</a>
-      <a class="logout" href="../index.html">Log Out</a>
+    <a class="links" href="myprojects.html">My Projects</a>
+    <a class="links" href="">Change Password</a>
+    <a class="links" class="logout" href="../index.html">Log Out</a>
 
   </div>
 </body>
+
 </html>

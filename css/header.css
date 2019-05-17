@@ -4,7 +4,7 @@
 }
 body{
   background-color: #E9E9E9;
-  height: 200vh;
+
 }
 .iconheader{
   width: 2.5em;
@@ -22,7 +22,7 @@ flex-direction: row;
     transition: .5s;
 }
 header.headerscroll{
-  background-color:  rgba(255,255,255,0.7);
+  background-color:  white;
 
 }
 .searchbar{

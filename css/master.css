@@ -1,0 +1,16 @@
+@import url(form.css);
+@import url(header.css);
+@import url(create.css);
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap&subset=latin-ext');
+*{
+  padding: 0;
+  margin: 0;
+	font-family: 'Karla';
+}
+
+input, button {
+  -moz-appearance: none;
+-webkit-appearance: none;
+outline: 0;
+border: 0;
+}

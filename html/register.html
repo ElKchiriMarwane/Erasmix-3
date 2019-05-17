@@ -1,65 +1,38 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="../css/form.css">
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#insert").click(function() {
-        var username = $("#username").val();
-        var email = $("#email").val();
-        var password = $("#password").val();
-        var dataString = "username=" + username + "&email=" + email + "&password=" + password + "&insert=";
-        if ($.trim(username).length > 0 & $.trim(email).length > 0 & $.trim(password).length > 0) {
-          $.ajax({
-            type: "POST",
-            url: "http://192.168.1.56/www/erasmix3/php/insert.php",
-            data: dataString,
-            crossDomain: true,
-            cache: false,
-            beforeSend: function() {
-              $("#insert").val('Creating account...');
-            },
-            success: function(data) {
-              if (data == "success") {
-                // alert("inserted");
-                window.location = "http://10.3.210.44/www/LoginRegister/www/index.html"
-                $("#insert").val('Register');
-              } else if (data == "error") {
-                // alert("error");
-              }
-            }
-          });
-        }
-        return false;
-      });
-    });
-  </script>
+	<link rel="stylesheet" href="../css/master.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="../js/register.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <div class="bar bar-header bar-positive" style="margin-bottom:80px;">
-    <!-- <h1 class="title">Insert Database</h1> -->
-    <!-- <a class="button button-clear" href="readjson.html">Read JSON</a> -->
-  </div><br /><br />
-  <div class="main">
-    <div class="login">
-      <img src="../icons/erasmixlogo.svg" class="erasmixlogoform" alt="">
-      <input type="hidden" id="id" value="" />
-        <input type="text" id="username" name="username" placeholder="Username"><br>
+	<div class="bar bar-header bar-positive" style="margin-bottom:80px;">
+		<!-- <h1 class="title">Insert Database</h1> -->
+		<!-- <a class="button button-clear" href="readjson.html">Read JSON</a> -->
+	</div><br /><br />
+	<div class="main">
+		<div class="login">
+			<img src="../icons/erasmixlogo.svg" class="erasmixlogoform" alt="">
+			<form action="#insert" method="POST">
+				<input type="hidden" id="id" value="" />
+				<input type="text" id="username" name="username" placeholder="Username" required><br>
+				<input type="text" id="firstname" name="firstname" placeholder="Firstname" required><br>
+				<input type="text" id="lastname" name="lastname" placeholder="Lastname" required><br>
+
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
 
 
-        <input type="email" id="email" name="email" placeholder="Email"><br>
+				<input type="password" id="password" name="password" placeholder="Password" required><br>
+<img src="../icons/nexticon.svg" class="icon"id="insert" alt="">
+				
+				<button class="registerlogin"><a href="../index.html">Log In</a></button>
+			</form>
+		</div>
 
 
-        <input type="password" id="password" name="password" placeholder="Password"><br>
-
-        <input type="button" id="insert" class="button button-block" value="Sign In" />
-<button class="registerlogin"><a href="../index.html">Log In</a></button>
-      </div>
-
-    </div>
-  </div>
+	</div>
 </body>
 
 </html>

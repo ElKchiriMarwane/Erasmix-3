@@ -1,14 +1,21 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-
 
 .erasmixlogoform{
-  width: 30%;
+  width: 30vw;
+
+}
+path{
+  animation: intro 2s;
+}
+@keyframes intro {
+  0%{
+    opacity:  0;
+  }
+  100%{
+    opacity:  1;
+  }
 }
 .login{
-  height: 100%;
+  height: 100vh;
   /* background-color: grey; */
   justify-content: center;
   display: flex;
@@ -16,12 +23,22 @@
   align-items: center;
   align-content: center;
 }
-input, .registerlogin{
-  width: 90%;
-  margin-top: 10%;
+.register{
+  margin-top: 2em;
+}
+input{
+  width: 80vw;
+  margin-top: 10vh;
   padding: 2%;
   border: none;
-  font-size: 50px;
+  /* font-size: 50px; */
   background-color: transparent;
-  border-bottom:2px  solid black;
+  border-bottom:1px  solid black;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
 }

@@ -14,12 +14,13 @@ if(mysqli_num_rows($result) > 0){
 	while($row = mysqli_fetch_assoc($result)){
 		$id = $row['id'];
 		$email = $row['email'];
-		session_start();
+		$user_name = $row['username'];
+
 		$_SESSION['id'] = $id;
 		$_SESSION['email'] = $email;
-
+$_SESSION['user_name'] = $user_name;
 	}
-	$_SESSION['username'] = $username;
+
 	echo 'success';
 
 }else{

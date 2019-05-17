@@ -1,8 +1,8 @@
 <?php
  header("Access-Control-Allow-Origin: *");
- $servername ="10.3.210.44";
- $username = "root";
- $password = "";
+ $servername ="10.3.210.128";
+ $user = "root";
+ $password = "pass";
  $database = "loginsystem";
- $con = mysqli_connect($servername, $username, $password, $database) or die ("could not connect database");
+ $con = mysqli_connect($servername, $user, $password, $database) or die ("could not connect database");
 ?>

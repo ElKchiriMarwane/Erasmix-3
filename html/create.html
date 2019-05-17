@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="../js/create.js"></script>
 </head>
 <body>
   <header>
@@ -14,14 +16,20 @@
     <h1>Create Project</h1>
 
   </div>
-  <div class="fix">
+   <div class="fix">
   <div class="buttons">
   <img class="icon" src="../icons/photoicon.svg" alt="">
   <img class="icon" src="../icons/microicon.svg" alt="">
-  <img class="icon" src="../icons/nexticon.svg" alt="">
+  <img class="icon" src="../icons/nexticon.svg" alt="" id="insert">
   </div>
-  </div>
-
+  </div> 
+<main>
+<form action="">
+<input type="text" name="projectname" id="projectname">
+<input type="text" name="text" id="text">
+<input type="button" value="insert" name="submit" id="insert">
+</form>
+</main>
   </header>
 </body>
 </html>

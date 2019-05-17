@@ -1,53 +1,28 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/master.css">
   <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#insert").click(function() {
-        var username = $("#username").val();
-        var password = $("#password").val();
-        var dataString = "username=" + username + "&password=" + password + "&insert=";
-        if ($.trim(username).length > 0 & $.trim(password).length > 0) {
-          $.ajax({
-            type: "POST",
-            url: "http://192.168.1.56/www/erasmix3/php/get.php",
-            data: dataString,
-            crossDomain: true,
-            cache: false,
-            beforeSend: function() {
-              $("#insert").val('Connecting...');
-            },
-            success: function(data) {
-              if (data == "success") {
-                window.location = "http://10.3.210.44/www/LoginRegister/www/html/timeline.html"
-                $("#insert").val('Log In');
-              } else if (data == "error") {
-                alert("error");
-              }
-            }
-          });
-        }
-        return false;
-      });
-    });
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/login.js"></script>
 </head>
 
 <body>
   <!-- <div class="bar bar-header bar-positive" style="margin-bottom:80px;">
      <h1 class="title">Insert Database</h1>
      <a class="button button-clear" href="readjson.html">Read JSON</a> -->
-   <!-- </div><br /><br /> -->
+  <!-- </div><br /><br /> -->
   <div class="main">
     <div class="login">
-      <img class="erasmixlogoform" src="icons/erasmixlogo.svg" class="logo" alt="">
+      <img class="erasmixlogoform" src="icons/erasmixlogo.svg" class="erasmixlogoform" alt="">
+      <form action="#insert" method="POST">
       <input type="hidden" id="id" value="" />
-      <input type="text" id="username" name="username" placeholder="Username"><br>
-      <input type="password" id="password" name="password" placeholder="Password"><br>
-      <input type="button" id="insert" value="Log In" />
-      <button class="registerlogin"><a href="html/register.html">Register</a></button>
+      <input type="text" id="username" name="username" placeholder="Username" required><br>
+
+      <input type="password" id="password" name="password" placeholder="Password" required><br>
+      <img src="icons/nexticon.svg" alt="" id="insert" class="icon">
+      </form>
+      <p class="register">You don't have an account yet? <a href="html/register.html">Register</a></p>
 
 
     </div>

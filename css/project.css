@@ -1,0 +1,35 @@
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	margin-top: 15vw;
+}
+.project{
+	width: 90vw;
+	background-color: white;
+	margin-top: 15px;
+
+}
+.project img{
+	width: 90vw;
+	height: 50vw;
+	
+}
+.project h1, .project p,.lastproject h1,.lastproject p{
+		padding: 10px;
+}
+.lastproject {
+	background-image: url(../images/bgtest.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	/*padding: 10vw;*/
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	color: white;
+}
